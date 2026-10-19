@@ -1,0 +1,25 @@
+{
+  "name": "adminapi",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy --minify",
+    "cf-typegen": "wrangler types --env-interface CloudflareBindings",
+    "test:smoke": "node test/smoke.mjs",
+    "test:keys": "node test/keys-e2e.mjs",
+    "test:ui": "node test/ui-check.cjs",
+    "test:models": "node test/model-probe.mjs",
+    "test:multi": "node test/multiturn.mjs"
+  },
+  "dependencies": {
+    "hono": "^4.12.31",
+    "quickjs-emscripten": "^0.32.0"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2",
+    "wrangler": "^4.15.2"
+  },
+  "overrides": {
+    "sharp": "^0.35.0"
+  }
+}

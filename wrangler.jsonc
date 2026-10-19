@@ -1,0 +1,12 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "adminapi",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-07-23",
+  "kv_namespaces": [
+    {
+      "binding": "KV",
+      "id": "fde72e813f6bdfsafda"
+    }
+  ]
+}
